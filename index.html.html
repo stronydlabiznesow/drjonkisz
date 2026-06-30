@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dr n. med. Aleksandra Jonkisz — Dermatolog Wrocław</title>
+<meta name="description" content="dr n. med. Aleksandra Jonkisz — dermatolog i wenerolog we Wrocławiu. Dermatoskopia, krioterapia, leczenie chorób skóry u dorosłych i dzieci. Medicover Globis i Centrum Przyjaźni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #1A2744;
+    --navy2:  #243560;
+    --ecru:   #F7F4EE;
+    --ecru2:  #F2EDE4;
+    --gold:   #C4A882;
+    --gold2:  #A8895E;
+    --slate:  #6B8FA3;
+    --text:   #1A2744;
+    --muted:  #6B7A99;
+    --white:  #ffffff;
+    --border: rgba(26,39,68,0.12);
+    --serif:  'Cormorant Garamond', Georgia, serif;
+    --sans:   'DM Sans', system-ui, sans-serif;
+    --radius: 4px;
+    --radius-lg: 12px;
+    --max: 1200px;
+    --transition: 0.25s ease;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ─── UTILITY ─── */
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+  .section-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold2);
+    margin-bottom: 1rem;
+  }
+
+  /* ─── NAVIGATION ─── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--navy);
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+
+  .nav-logo span {
+    display: block;
+    font-size: 10px;
+    font-family: var(--sans);
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+    transition: color var(--transition);
+    letter-spacing: 0.02em;
+  }
+
+  .nav-links a:hover { color: var(--navy); }
+
+  .nav-cta {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: var(--ecru) !important;
+    background: var(--navy);
+    padding: 9px 20px;
+    border-radius: var(--radius);
+    transition: background var(--transition) !important;
+  }
+
+  .nav-cta:hover { background: var(--navy2) !important; color: var(--ecru) !important; }
+
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 1.5px;
+    background: var(--navy);
+    transition: var(--transition);
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+    gap: 1.25rem;
+  }
+
+  .mobile-menu.open { display: flex; }
+
+  .mobile-menu a {
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .mobile-menu .nav-cta {
+    text-align: center;
+    padding: 12px 20px;
+    color: var(--ecru) !important;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--ecru2);
+    padding: 0;
+    overflow: hidden;
+    min-height: 620px;
+  }
+
+  .hero-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 0;
+    align-items: stretch;
+    min-height: 620px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px 80px 0;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--navy);
+    color: var(--gold);
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: var(--radius);
+    margin-bottom: 1.75rem;
+    width: fit-content;
+  }
+
+  .hero-badge::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  .hero-name {
+    font-family: var(--serif);
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--slate);
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-tagline {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 440px;
+    margin-bottom: 2.25rem;
+  }
+
+  .hero-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 2.5rem;
+  }
+
+  .chip {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--navy);
+    background: rgba(26,39,68,0.07);
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  .chip-gold {
+    color: var(--gold2);
+    background: rgba(196,168,130,0.15);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--navy);
+    color: var(--ecru);
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 13px 24px;
+    border-radius: var(--radius);
+    transition: background var(--transition);
+    cursor: pointer;
+  }
+
+  .btn-primary:hover { background: var(--navy2); }
+
+  .btn-primary .arrow {
+    font-size: 16px;
+    transition: transform var(--transition);
+  }
+
+  .btn-primary:hover .arrow { transform: translateX(3px); }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: var(--navy);
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    padding: 13px 24px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: border-color var(--transition), background var(--transition);
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--navy);
+    background: rgba(26,39,68,0.04);
+  }
+
+  .hero-photo-col {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-photo-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65% top;
+  }
+
+  .hero-photo-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--ecru2) 0%, transparent 18%);
+    pointer-events: none;
+  }
+
+  /* ─── CREDENTIALS BAR ─── */
+  .credentials {
+    background: var(--navy);
+    padding: 0;
+  }
+
+  .credentials-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cred-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 36px 32px 36px 0;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .cred-item:last-child { border-right: none; }
+  .cred-item:first-child { padding-left: 0; }
+
+  .cred-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius);
+    background: rgba(196,168,130,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cred-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+
+  .cred-text {}
+
+  .cred-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(196,168,130,0.7);
+    margin-bottom: 4px;
+  }
+
+  .cred-value {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ecru);
+    line-height: 1.35;
+  }
+
+  /* ─── SERVICES ─── */
+  .services {
+    padding: 100px 0;
+    background: var(--white);
+  }
+
+  .services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 56px;
+  }
+
+  .services-title {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.1;
+    max-width: 520px;
+  }
+
+  .services-title em {
+    font-style: italic;
+    color: var(--slate);
+  }
+
+  .services-subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    max-width: 280px;
+    text-align: right;
+    line-height: 1.6;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .service-card {
+    background: var(--white);
+    padding: 36px 28px;
+    transition: background var(--transition);
+    position: relative;
+  }
+
+  .service-card:hover { background: var(--ecru2); }
+
+  .service-number {
+    font-family: var(--serif);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+
+  .service-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius);
+    background: var(--ecru2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: background var(--transition);
+  }
+
+  .service-card:hover .service-icon { background: rgba(26,39,68,0.08); }
+  .service-icon svg { width: 22px; height: 22px; stroke: var(--navy); fill: none; stroke-width: 1.5; }
+
+  .service-name {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .service-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 20px;
+  }
+
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .service-tag {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--slate);
+    background: rgba(107,143,163,0.1);
+    padding: 3px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ─── ABOUT ─── */
+  .about {
+    padding: 100px 0;
+    background: var(--ecru2);
+  }
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .about-photo-wrap {
+    position: relative;
+  }
+
+  .about-photo-wrap img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: 65% top;
+    border-radius: var(--radius-lg);
+  }
+
+  .about-photo-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(26,39,68,0.88);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    display: flex;
+    gap: 16px;
+  }
+
+  .about-photo-stat {
+    text-align: center;
+    flex: 1;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .about-photo-stat:last-child { border-right: none; }
+
+  .about-stat-num {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .about-stat-label {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(247,244,238,0.55);
+  }
+
+  .about-content {
+    padding-top: 8px;
+  }
+
+  .about-title {
+    font-family: var(--serif);
+    font-size: clamp(30px, 3.5vw, 44px);
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-title em {
+    font-style: italic;
+    color: var(--slate);
+  }
+
+  .about-lead {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    border-left: 2px solid var(--gold);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  .about-text {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .about-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--navy);
+    line-height: 1.4;
+  }
+
+  .highlight-dot {
+    flex-shrink: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin-top: 6px;
+  }
+
+  .about-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--slate);
+    background: rgba(107,143,163,0.12);
+    padding: 6px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  /* ─── REVIEWS ─── */
+  .reviews {
+    padding: 100px 0;
+    background: var(--white);
+  }
+
+  .reviews-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .reviews-title {
+    font-family: var(--serif);
+    font-size: clamp(30px, 3.5vw, 44px);
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 12px;
+    line-height: 1.1;
+  }
+
+  .reviews-meta {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .reviews-meta strong {
+    color: var(--gold2);
+    font-weight: 500;
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .review-card {
+    background: var(--ecru2);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    position: relative;
+  }
+
+  .review-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 16px;
+  }
+
+  .star {
+    width: 14px;
+    height: 14px;
+    fill: var(--gold);
+  }
+
+  .review-quote {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  .review-quote::before {
+    content: '\201C';
+    font-size: 36px;
+    line-height: 0;
+    vertical-align: -12px;
+    color: var(--gold);
+    margin-right: 4px;
+    font-family: var(--serif);
+  }
+
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .review-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--ecru);
+    flex-shrink: 0;
+  }
+
+  .review-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+
+  .review-platform {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .reviews-cta {
+    text-align: center;
+  }
+
+  .reviews-cta a {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--gold);
+    transition: color var(--transition);
+  }
+
+  .reviews-cta a:hover { color: var(--navy); }
+
+  /* ─── LOCATIONS ─── */
+  .locations {
+    padding: 100px 0;
+    background: var(--navy);
+  }
+
+  .locations-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .locations-title {
+    font-family: var(--serif);
+    font-size: clamp(30px, 3.5vw, 44px);
+    font-weight: 400;
+    color: var(--ecru);
+    margin-bottom: 12px;
+    line-height: 1.1;
+  }
+
+  .locations-subtitle {
+    font-size: 14px;
+    color: rgba(247,244,238,0.5);
+  }
+
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+
+  .location-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+  }
+
+  .location-num {
+    font-family: var(--serif);
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+
+  .location-name {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--ecru);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .location-full {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(196,168,130,0.7);
+    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+
+  .location-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .location-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: rgba(247,244,238,0.65);
+    line-height: 1.45;
+  }
+
+  .loc-icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+  }
+
+  .loc-icon svg { width: 16px; height: 16px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+
+  .location-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 11px 22px;
+    border-radius: var(--radius);
+    transition: background var(--transition);
+  }
+
+  .location-btn:hover { background: #d4b890; }
+
+  .location-btn .arrow { font-size: 14px; transition: transform var(--transition); }
+  .location-btn:hover .arrow { transform: translateX(3px); }
+
+  /* ─── FOOTER CTA BAND ─── */
+  .footer-cta {
+    background: var(--ecru2);
+    border-top: 1px solid var(--border);
+    padding: 60px 0;
+  }
+
+  .footer-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footer-cta-text {}
+
+  .footer-cta-title {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .footer-cta-sub {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .footer-cta-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--navy);
+    padding: 40px 0;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    font-family: var(--serif);
+    font-size: 16px;
+    color: var(--ecru);
+    font-weight: 400;
+  }
+
+  .footer-logo span {
+    display: block;
+    font-size: 10px;
+    font-family: var(--sans);
+    color: rgba(247,244,238,0.4);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+    color: rgba(247,244,238,0.45);
+    transition: color var(--transition);
+    letter-spacing: 0.03em;
+  }
+
+  .footer-links a:hover { color: var(--ecru); }
+
+  .footer-copy {
+    font-size: 11px;
+    color: rgba(247,244,238,0.3);
+    letter-spacing: 0.04em;
+  }
+
+  /* ─── DIVIDER ─── */
+  .section-divider {
+    width: 48px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ─── SCROLL REVEAL ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+
+    .hero-inner {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero-photo-col { display: none; }
+
+    .hero-content {
+      padding: 60px 0 60px 0;
+    }
+
+    .credentials-inner {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .cred-item {
+      padding: 24px 20px 24px 0;
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .cred-item:nth-child(2n) { padding-right: 0; }
+    .cred-item:nth-last-child(-n+2) { border-bottom: none; }
+
+    .services-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .services-subtitle { text-align: left; max-width: 100%; }
+
+    .services-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about-inner {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .about-photo-wrap img { aspect-ratio: 3/2; object-position: center 20%; }
+
+    .reviews-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .locations-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-cta-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 0 1.25rem; }
+    .nav-inner { padding: 0 1.25rem; }
+
+    .services-grid { grid-template-columns: 1fr; }
+
+    .credentials-inner { grid-template-columns: 1fr; }
+    .cred-item { border-bottom: 1px solid rgba(255,255,255,0.08); border-right: none; }
+    .cred-item:last-child { border-bottom: none; }
+
+    .about-highlights { grid-template-columns: 1fr; }
+
+    .footer-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .footer-links { flex-wrap: wrap; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      dr n. med. Aleksandra Jonkisz
+      <span>Dermatolog · Wrocław</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#o-mnie">O mnie</a></li>
+      <li><a href="#specjalizacje">Specjalizacje</a></li>
+      <li><a href="#opinie">Opinie</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="https://www.znanylekarz.pl/aleksandra-jonkisz-3/dermatolog/wroclaw" target="_blank" rel="noopener" class="nav-cta">Umów wizytę ↗</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#o-mnie" onclick="document.getElementById('mobileMenu').classList.remove('open')">O mnie</a>
+    <a href="#specjalizacje" onclick="document.getElementById('mobileMenu').classList.remove('open')">Specjalizacje</a>
+    <a href="#opinie" onclick="document.getElementById('mobileMenu').classList.remove('open')">Opinie</a>
+    <a href="#kontakt" onclick="document.getElementById('mobileMenu').classList.remove('open')">Kontakt</a>
+    <a href="https://www.znanylekarz.pl/aleksandra-jonkisz-3/dermatolog/wroclaw" target="_blank" rel="noopener" class="nav-cta">Umów wizytę ↗</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content container" style="max-width:none;">
+      <div class="hero-badge">dr n. med.</div>
+      <h1 class="hero-name">Aleksandra<br>Jonkisz</h1>
+      <p class="hero-title">Dermatolog &amp; Wenerolog</p>
+      <p class="hero-tagline">Diagnoza oparta na wiedzy naukowej, leczenie z troską o pacjenta. Przyjmuję dorosłych i dzieci we Wrocławiu.</p>
+      <div class="hero-chips">
+        <span class="chip chip-gold">⭐ 5.0 / 9 opinii · ZnanyLekarz</span>
+        <span class="chip">Członek PTD</span>
+        <span class="chip">Publikacje naukowe</span>
+        <span class="chip">EN / PL</span>
+      </div>
+      <div class="hero-actions">
+        <a href="https://www.znanylekarz.pl/aleksandra-jonkisz-3/dermatolog/wroclaw" target="_blank" rel="noopener" class="btn-primary">Umów wizytę <span class="arrow">→</span></a>
+        <a href="#specjalizacje" class="btn-secondary">Specjalizacje</a>
+      </div>
+    </div>
+    <div class="hero-photo-col">
+      <img
+        src="https://pixel-p2.s3.eu-central-1.amazonaws.com/doctor/avatar/03affbde/03affbde-58fa-4aeb-b912-1bf080f262da_large.jpg"
+        alt="dr n. med. Aleksandra Jonkisz — dermatolog Wrocław"
+        loading="eager"
+      >
+      <div class="hero-photo-overlay"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS BAR -->
+<section class="credentials">
+  <div class="credentials-inner container" style="max-width:none;">
+    <div class="cred-item reveal">
+      <div class="cred-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+      </div>
+      <div class="cred-text">
+        <div class="cred-label">Wykształcenie</div>
+        <div class="cred-value">UM Piastów Śląskich, Wrocław</div>
+      </div>
+    </div>
+    <div class="cred-item reveal reveal-delay-1">
+      <div class="cred-icon">
+        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+      </div>
+      <div class="cred-text">
+        <div class="cred-label">Specjalizacja</div>
+        <div class="cred-value">Klinika Dermatologii, Lublin</div>
+      </div>
+    </div>
+    <div class="cred-item reveal reveal-delay-2">
+      <div class="cred-icon">
+        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      </div>
+      <div class="cred-text">
+        <div class="cred-label">Członkostwo</div>
+        <div class="cred-value">Polskie Towarzystwo Dermatologiczne</div>
+      </div>
+    </div>
+    <div class="cred-item reveal reveal-delay-3">
+      <div class="cred-icon">
+        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      </div>
+      <div class="cred-text">
+        <div class="cred-label">Nauka</div>
+        <div class="cred-value">Publikacje naukowe · konferencje krajowe i zagraniczne</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="specjalizacje">
+  <div class="container">
+    <div class="services-header reveal">
+      <div>
+        <div class="section-label">Specjalizacje</div>
+        <h2 class="services-title">Kompleksowa opieka<br><em>nad skórą</em></h2>
+      </div>
+      <p class="services-subtitle">Diagnozuję i leczę choroby skóry u dorosłych i dzieci, stosując najnowsze metody kliniczne.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </div>
+        <h3 class="service-name">Dermatologia ogólna</h3>
+        <p class="service-desc">Diagnoza i leczenie chorób skóry, włosów i paznokci. Przyjmuję zarówno dorosłych, jak i dzieci.</p>
+        <div class="service-tags">
+          <span class="service-tag">trądzik</span>
+          <span class="service-tag">łuszczyca</span>
+          <span class="service-tag">AZS</span>
+          <span class="service-tag">grzybice</span>
+          <span class="service-tag">łysienie</span>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-number">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+        <h3 class="service-name">Dermatoskopia</h3>
+        <p class="service-desc">Ocena znamion i zmian skórnych pod kątem czerniaka i innych nowotworów skóry metodą dermatoskopową.</p>
+        <div class="service-tags">
+          <span class="service-tag">znamiona</span>
+          <span class="service-tag">czerniak</span>
+          <span class="service-tag">zmiany skórne</span>
+          <span class="service-tag">profilaktyka</span>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-number">03</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+        </div>
+        <h3 class="service-name">Krioterapia</h3>
+        <p class="service-desc">Zamrażanie zmian skórnych ciekłym azotem — skuteczne leczenie brodawek, rogowaceń i innych zmian.</p>
+        <div class="service-tags">
+          <span class="service-tag">brodawki</span>
+          <span class="service-tag">brodawki wirusowe</span>
+          <span class="service-tag">rogowacenie</span>
+          <span class="service-tag">keratoza</span>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-number">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        </div>
+        <h3 class="service-name">Wenerologia</h3>
+        <p class="service-desc">Diagnostyka i leczenie chorób przenoszonych drogą płciową. Gabinet z zachowaniem pełnej dyskrecji.</p>
+        <div class="service-tags">
+          <span class="service-tag">choroby weneryczne</span>
+          <span class="service-tag">STI</span>
+          <span class="service-tag">diagnostyka</span>
+          <span class="service-tag">leczenie</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="o-mnie">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-photo-wrap reveal">
+        <img
+          src="https://pixel-p2.s3.eu-central-1.amazonaws.com/doctor/avatar/03affbde/03affbde-58fa-4aeb-b912-1bf080f262da_large.jpg"
+          alt="dr n. med. Aleksandra Jonkisz"
+          loading="lazy"
+        >
+        <div class="about-photo-caption">
+          <div class="about-photo-stat">
+            <div class="about-stat-num">5.0</div>
+            <div class="about-stat-label">Ocena</div>
+          </div>
+          <div class="about-photo-stat">
+            <div class="about-stat-num">9</div>
+            <div class="about-stat-label">Opinii</div>
+          </div>
+          <div class="about-photo-stat">
+            <div class="about-stat-num">2</div>
+            <div class="about-stat-label">Placówki</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-delay-1">
+        <div class="section-label">O mnie</div>
+        <div class="section-divider"></div>
+        <h2 class="about-title">Dermatologia<br>to moja <em>pasja</em></h2>
+        <p class="about-lead">Wierzę, że dobra diagnostyka zaczyna się od uważnego słuchania pacjenta.</p>
+        <p class="about-text">
+          Jestem absolwentką Uniwersytetu Medycznego im. Piastów Śląskich we Wrocławiu. Specjalizację z dermatologii i wenerologii ukończyłam w Klinice Dermatologii, Wenerologii i Dermatologii Dziecięcej w Lublinie.
+        </p>
+        <p class="about-text">
+          Od lat aktywnie uczestniczę w konferencjach ogólnopolskich i zagranicznych oraz kursach doskonalących. Jestem autorką publikacji naukowych i członkiem Polskiego Towarzystwa Dermatologicznego.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item"><div class="highlight-dot"></div>Przyjmuję dorosłych i dzieci</div>
+          <div class="highlight-item"><div class="highlight-dot"></div>Dermatoskopia i ocena znamion</div>
+          <div class="highlight-item"><div class="highlight-dot"></div>Krioterapia zmian skórnych</div>
+          <div class="highlight-item"><div class="highlight-dot"></div>Wenerologia i choroby STI</div>
+          <div class="highlight-item"><div class="highlight-dot"></div>Leczenie trądziku różowatego</div>
+          <div class="highlight-item"><div class="highlight-dot"></div>Laseroterapia zmian naczyniowych</div>
+        </div>
+        <span class="about-lang">🇵🇱 Polski &nbsp;·&nbsp; 🇬🇧 English</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="opinie">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <div class="section-label" style="text-align:center;">Opinie pacjentów</div>
+      <h2 class="reviews-title">Co mówią<br><em style="font-style:italic; color:var(--slate);">moi pacjenci</em></h2>
+      <p class="reviews-meta"><strong>9 opinii · ocena 5.0/5.0</strong> na ZnanyLekarz</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p class="review-quote">Miła, rzeczowa i zaangażowana Pani Doktor. Czułam się wysłuchana i zaopiekowana.</p>
+        <div class="review-author">
+          <div class="review-avatar">OL</div>
+          <div>
+            <div class="review-name">Oleksandra</div>
+            <div class="review-platform">ZnanyLekarz · zweryfikowana wizyta</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-1">
+        <div class="review-stars">
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p class="review-quote">Lekarz rzetelny, kompetentny oraz z dobrym podejściem do dzieci. Polecam całą rodziną.</p>
+        <div class="review-author">
+          <div class="review-avatar">TK</div>
+          <div>
+            <div class="review-name">Tomek</div>
+            <div class="review-platform">ZnanyLekarz · zweryfikowany numer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-2">
+        <div class="review-stars">
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p class="review-quote">Bardzo miła, rzetelna Pani Doktor. Przeprowadziła szeroki wywiad i wyjaśniła wszystko po wystawieniu diagnozy.</p>
+        <div class="review-author">
+          <div class="review-avatar">MN</div>
+          <div>
+            <div class="review-name">Monika</div>
+            <div class="review-platform">ZnanyLekarz · zweryfikowana wizyta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-cta reveal">
+      <a href="https://www.znanylekarz.pl/aleksandra-jonkisz-3/dermatolog/wroclaw#profile-reviews" target="_blank" rel="noopener">
+        Zobacz wszystkie 9 opinii na ZnanyLekarz →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="locations" id="kontakt">
+  <div class="container">
+    <div class="locations-header reveal">
+      <div class="section-label" style="color:rgba(196,168,130,0.7);">Gdzie przyjmuję</div>
+      <h2 class="locations-title">Dwie lokalizacje<br><em style="font-style:italic; color:var(--slate);">we Wrocławiu</em></h2>
+      <p class="locations-subtitle">Wizyty prywatne · tylko płatne</p>
+    </div>
+
+    <div class="locations-grid">
+      <div class="location-card reveal">
+        <div class="location-num">Placówka 01</div>
+        <h3 class="location-name">Centrum Przyjaźni<br><span style="font-size:18px; font-style:italic; color:var(--slate);">— Kaniowscy</span></h3>
+        <p class="location-full">ul. Barycka 1/3 (wejście od Prusa)<br>50-325 Wrocław · Stare Miasto</p>
+        <ul class="location-details">
+          <li>
+            <span class="loc-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span>
+            Stare Miasto, centrum Wrocławia
+          </li>
+          <li>
+            <span class="loc-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+            Godziny przyjęć: wg kalendarza ZnanyLekarz
+          </li>
+          <li>
+            <span class="loc-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></span>
+            71 322 69 09
+          </li>
+        </ul>
+        <a href="https://www.znanylekarz.pl/aleksandra-jonkisz-3/dermatolog/wroclaw" target="_blank" rel="noopener" class="location-btn">
+          Umów wizytę <span class="arrow">→</span>
+        </a>
+      </div>
+
+      <div class="location-card reveal reveal-delay-1">
+        <div class="location-num">Placówka 02</div>
+        <h3 class="location-name">Medicover<br><span style="font-size:18px; font-style:italic; color:var(--slate);">— Globis</span></h3>
+        <p class="location-full">ul. Powstańców Śląskich 9<br>53-332 Wrocław · Krzyki</p>
+        <ul class="location-details">
+          <li>
+            <span class="loc-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span>
+            Galeria Globis, dobre połączenia komunikacyjne
+          </li>
+          <li>
+            <span class="loc-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+            Godziny przyjęć: wg kalendarza Medicover
+          </li>
+          <li>
+            <span class="loc-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg></span>
+            medicover.pl
+          </li>
+        </ul>
+        <a href="https://www.medicover.pl" target="_blank" rel="noopener" class="location-btn">
+          Umów wizytę <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="footer-cta">
+  <div class="container">
+    <div class="footer-cta-inner">
+      <div class="footer-cta-text reveal">
+        <h2 class="footer-cta-title">Gotowy na wizytę?</h2>
+        <p class="footer-cta-sub">Wybierz termin online — bez konieczności dzwonienia.</p>
+      </div>
+      <div class="footer-cta-actions reveal reveal-delay-1">
+        <a href="https://www.znanylekarz.pl/aleksandra-jonkisz-3/dermatolog/wroclaw" target="_blank" rel="noopener" class="btn-primary">
+          ZnanyLekarz <span class="arrow">→</span>
+        </a>
+        <a href="https://www.medicover.pl" target="_blank" rel="noopener" class="btn-secondary">
+          Medicover ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        dr n. med. Aleksandra Jonkisz
+        <span>Dermatolog · Wenerolog · Wrocław</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#o-mnie">O mnie</a></li>
+        <li><a href="#specjalizacje">Specjalizacje</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="https://www.instagram.com/dr_aleksandrajonkisz" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <p class="footer-copy">© 2025 dr n. med. Aleksandra Jonkisz</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+
+  // Smooth anchor scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
